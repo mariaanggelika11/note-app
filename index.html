@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Note Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="head_bar">
+      <h1 class="head_bar__title">Note Apps</h1>
+    </header>
+    <main class="grid-container">
+      <div class="input_section">
+        <book-input-form></book-input-form>
+      </div>
+
+      <div class="search_section">
+        <book-search-form></book-search-form>
+      </div>
+
+      <div class="book_shelf incomplete">
+        <incomplete-book-shelf></incomplete-book-shelf>
+      </div>
+
+      <div class="book_shelf complete">
+        <complete-book-shelf></complete-book-shelf>
+      </div>
+
+      <p id="noResultsMessage"></p>
+    </main>
+    <footer class="footer"></footer>
+
+    <div id="deleteDialog" class="dialog" style="display: none">
+      <p>Apakah Anda yakin ingin menghapus catatan ini?</p>
+      <button id="confirmDelete" class="red">Ya</button>
+      <button id="cancelDelete">Tidak</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
